@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: pumpbot-50
+    env: docker
+    region: oregon
+    plan: free
+    autoDeploy: true
+    envVars:
+      PRIVATE_KEY:
+        fromSecret: PRIVATE_KEY
